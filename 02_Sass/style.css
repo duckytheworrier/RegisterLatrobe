@@ -159,8 +159,8 @@ label {
   color: #a0a0a0;
   width: 100%;
   padding: 0.5rem;
-  background: rgba(0, 102, 255, 0.1);
-  border: 2px dashed rgba(0, 102, 255, 0.2);
+  background: rgba(226, 35, 51, 0.1);
+  border: 2px dashed rgba(226, 35, 51, 0.2);
   text-align: center;
   -webkit-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
@@ -171,15 +171,15 @@ label {
 }
 
 .file-area:hover .file-dummy {
-  color: #0066ff;
-  border: 2px dashed #0066FF;
-  background: rgba(0, 102, 255, 0.2);
+  color: #e22333;
+  border: 2px dashed #e22333;
+  background: rgba(226, 35, 51, 0.2);
 }
 
 .file-area input[type=file]:focus + .file-dummy {
   outline: 2px solid rgba(255, 255, 255, 0.5);
-  color: #0066ff;
-  background: rgba(0, 102, 255, 0.2);
+  color: #e22333;
+  background: rgba(226, 35, 51, 0.2);
   outline: -webkit-focus-ring-color auto 5px;
 }
 
@@ -206,7 +206,7 @@ span {
 
 button {
   margin-top: 1rem;
-  background: #0066FF;
+  background: #e22333;
   font-family: 'Roboto Slab', sans-serif;
   font-size: 1.25rem;
   color: #FFF;
@@ -218,6 +218,6 @@ button {
 }
 
 button:hover {
-  background: #005CE5;
+  background: #c91b29;
 }
 /*# sourceMappingURL=style.css.map */
