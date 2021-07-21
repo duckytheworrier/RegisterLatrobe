@@ -1,0 +1,165 @@
+$primary-color: #E22333
+
+@function remy($value)
+  @return ($value / 16px) * 1rem
+
+body
+    background-image: url("../01_Media/bg_img.jpg")
+    background-color: #cccccc
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    min-height: 956px
+
+.main-form
+    position: absolute
+    top: 50%
+    right: 0
+    left: 0
+    margin-right: auto
+    margin-left: auto
+    transform: translateY(-50%)
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    width: remy(1200px)
+    // height: remy(919px)
+    box-shadow: 0px 27px 87px rgba(0, 0, 0, 0.15), 0px 11.28px 36.3465px rgba(0, 0, 0, 0.107828), 0px 6.0308px 19.4326px rgba(0, 0, 0, 0.0894161), 0px 3.38082px 10.8938px rgba(0, 0, 0, 0.075), 0px 1.79553px 5.78559px rgba(0, 0, 0, 0.0605839), 0px 0.747159px 2.40751px rgba(0, 0, 0, 0.0421718)
+
+.container-child
+    width: 50%
+    height: 100%
+    color: #fff
+
+.signup-thumbnail
+    // position: relative
+    padding: 2rem
+    display: flex
+    flex-direction: column
+    row-gap: remy(40px)
+    flex-wrap: wrap
+    justify-content: space-between
+    background: url('../01_Media/signup-thumbnail.jpg')
+    background-size: cover
+    height: remy(919px)
+    background-repeat: no-repeat
+
+.thumbnail-logo, .thumbnail-content, .thumbnail-link
+    position: relative
+    z-index: 2
+
+.thumbnail-logo
+    align-self: flex-start
+    // margin-bottom: remy(48px)
+
+.thumbnail-content
+    display: flex
+    flex-direction: column
+    // align-self: center
+    row-gap: remy(40px)
+
+.thumbnail-point
+    color: #CECECE
+    font-size: remy(18px)
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+
+.point-svg
+    margin-right: remy(16px)
+
+.thumbnail-link
+    display: flex
+    margin-top: auto
+    align-self: flex-end
+    column-gap: remy(16px)
+
+.signup-form
+    padding: 2rem
+    display: flex
+    flex-direction: column
+    row-gap: remy(16px)
+    background: #FAFAFA
+    color: #212121
+    height: remy(919px)
+
+.note
+    font-family: 'Open Sans', sans-serif
+
+label
+    font-family: 'Open Sans', sans-serif
+    font-size: remy(14px)
+    color: #707070
+
+.file-area
+    width: 100%
+    position: relative
+
+    input[type=file]
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        opacity: 0
+        cursor: pointer
+
+    .file-dummy
+        font-family: 'Open Sans', sans-serif
+        font-size: 14px
+        color: #a0a0a0
+        width: 100%
+        padding: remy(8px)
+        background: rgba(0, 102, 255, 0.1)
+        border: 2px dashed rgba(0, 102, 255, 0.2)
+        text-align: center
+        transition: background 0.3s ease-in-out
+        
+        .success
+            display: none
+        
+    &:hover .file-dummy
+        color: rgba(0, 102, 255, 1)
+        border: 2px dashed #0066FF
+        background: rgba(0, 102, 255, 0.2)
+
+    input[type=file]:focus + .file-dummy
+        outline: 2px solid rgba(255,255,255,0.5)
+        color: rgba(0, 102, 255, 1)
+        background: rgba(0, 102, 255, 0.2)
+        outline: -webkit-focus-ring-color auto 5px
+        
+    input[type=file]:valid + .file-dummy
+        border-color: rgba(0,255,0,0.4)
+        background-color: rgba(0,255,0,0.3)
+
+        .success
+            display: inline-block
+
+        .default
+            display: none
+
+span
+    font-family: 'Open Sans', sans-serif
+    font-style: italic
+    font-size: remy(14px)
+    height: remy(22px)
+    float: right
+
+button
+    margin-top: 1rem
+    background: #0066FF
+    font-family: 'Roboto Slab', sans-serif
+    font-size: remy(20px)
+    color: #FFF
+    width: 100%
+    height: remy(48px)
+    border: 0
+    transition: background 0.2s ease-in-out
+    
+    &:hover
+        background: #005CE5

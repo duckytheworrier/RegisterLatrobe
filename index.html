@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Đăng kí hồ sơ online - La Trobe</title>
+        <link href="bootstrap.css" rel="stylesheet">
+        <link href="02_Sass/style.css" rel="stylesheet">
+        <script src="bootstrap.js"></script>
+        <link rel="icon" href="01_Media/favicon.svg" type="image/svg+xml" sizes="any">
+    </head>
+    <body>
+        <div class="main-form">
+            <!-- Title và thông tin -->
+            <div class="container-child signup-thumbnail">
+                <div class="thumbnail-logo">
+                    <img width="164px" src="01_Media/logo.svg"></img>
+                </div>
+                <div class="thumbnail-content">
+                    <h2>CHƯƠNG TRÌNH LIÊN KẾT ĐÀO TẠO CỬ NHÂN QUỐC TẾ VỚI ĐẠI HỌC LA TROBE, AUSTRALIA</h2>
+                    <div class="thumbnail-point">
+                        <img class="point-svg" width="24px" src="01_Media/public.svg">
+                        <p class="point-content">Môi trường học quốc tế tại ngôi trường năng động nhất nước Úc và nằm trong top 250 trường đại học tốt nhất thế giới</p>
+                    </div>
+                    <div class="thumbnail-point">
+                        <img class="point-svg" width="24px" src="01_Media/business.svg">
+                        <p class="point-content">Không gian học tập hiện đại dành cho sinh viên ngành Công Nghệ Thông Tin và Kỹ Thuật, cơ hội việc làm và định cư thuận lợi</p>
+                    </div>
+                </div>
+                <div class="thumbnail-link">
+                    <a href="#"><img src="01_Media/01.svg"></a>
+                    <a href="#"><img src="01_Media/02.svg"></a>
+                    <a href="#"><img src="01_Media/03.svg"></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="01_Media/04.svg"></a>
+                </div>
+            </div>
+
+            <!-- Form điền thông tin và tải ảnh lên -->
+            <div class="container-child signup-form">
+                <h3>Đăng kí hồ sơ</h3>
+                <div class="note">
+                    <p>Thời gian nộp hồ sơ tuyển sinh</p>
+                    <ul>
+                        <li>Đợt 1: Hạn nộp hồ sơ đến hết ngày 15/7/2021</li>
+                        <li>Đợt 2: Hạn nộp hồ sơ đến hết ngày 30/9/2021</li>
+                    </ul>
+                    <i>Ghi chú: Những thí sinh chưa có chứng chỉ tiếng Anh quốc tế theo yêu cầu cần liên  hệ với Trung tâm Đào tạo Quốc tế để đăng ký thi tiếng Anh xét tuyển vào chương trình.</i>
+                </div>
+                
+                <form action="#">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="text" name="email" id="email" placeholder="Email của bạn…" required>
+                    </div>
+
+                    <div class="form-group file-area">
+                        <label for="don_dang_ki">
+                            Đơn đăng kí xét tuyển
+                            <span>Download tại đây: <a href="https://bom.to/NFJ7CKgnw8I1m">Link download</a></span>
+                        </label>
+                        <input type="file" name="don_dang_ki" required>
+                        <div class="file-dummy">
+                            <div class="success">Tải lên thành công!</div>
+                            <div class="default">Chọn ảnh tải lên</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group file-area">
+                        <label for="don_dang_ki">
+                            Bản sao hợp lệ Bằng tốt nghiệp THPT
+                            <span>(hoặc giấy chứng nhận tạm thời THPT)</span>
+                        </label>
+                        <input type="file" name="don_dang_ki" required>
+                        <div class="file-dummy">
+                            <div class="success">Tải lên thành công!</div>
+                            <div class="default">Chọn ảnh tải lên</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group file-area">
+                        <label for="don_dang_ki">
+                            Bản sao hợp lệ Học bạ trung học phổ thông
+                        </label>
+                        <input type="file" name="don_dang_ki" required>
+                        <div class="file-dummy">
+                            <div class="success">Tải lên thành công!</div>
+                            <div class="default">Chọn ảnh tải lên</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group file-area">
+                        <label for="don_dang_ki">
+                            Sơ yếu lý lịch có xác nhận của địa phương
+                        </label>
+                        <input type="file" name="don_dang_ki" required>
+                        <div class="file-dummy">
+                            <div class="success">Tải lên thành công!</div>
+                            <div class="default">Chọn ảnh tải lên</div>
+                        </div>
+                    </div>
+
+                    <div class="form-group file-area">
+                        <label for="don_dang_ki">
+                            Ảnh cỡ 3x4
+                            <span>(chụp trong 6 tháng gần đây)</span>
+                        </label>
+                        <input type="file" name="don_dang_ki" required>
+                        <div class="file-dummy">
+                            <div class="success">Tải lên thành công!</div>
+                            <div class="default">Chọn ảnh tải lên</div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="form-group file-area">
+                        <label for="don_dang_ki">
+                            Bản sao công chứng Tiếng anh
+                            <span>(nếu có)</span>
+                        </label>
+                        <input type="file" name="don_dang_ki" required>
+                        <div class="file-dummy">
+                            <div class="success">Tải lên thành công!</div>
+                            <div class="default">Chọn ảnh tải lên</div>
+                        </div>
+                    </div> -->
+
+                    <div class="form-group">
+                        <button type="submit">Đăng kí hồ sơ</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

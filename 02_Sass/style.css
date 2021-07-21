@@ -1,0 +1,223 @@
+body {
+  background-image: url("../01_Media/bg_img.jpg");
+  background-color: #cccccc;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 956px;
+}
+
+.main-form {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 75rem;
+  -webkit-box-shadow: 0px 27px 87px rgba(0, 0, 0, 0.15), 0px 11.28px 36.3465px rgba(0, 0, 0, 0.107828), 0px 6.0308px 19.4326px rgba(0, 0, 0, 0.0894161), 0px 3.38082px 10.8938px rgba(0, 0, 0, 0.075), 0px 1.79553px 5.78559px rgba(0, 0, 0, 0.0605839), 0px 0.74716px 2.40751px rgba(0, 0, 0, 0.0421718);
+          box-shadow: 0px 27px 87px rgba(0, 0, 0, 0.15), 0px 11.28px 36.3465px rgba(0, 0, 0, 0.107828), 0px 6.0308px 19.4326px rgba(0, 0, 0, 0.0894161), 0px 3.38082px 10.8938px rgba(0, 0, 0, 0.075), 0px 1.79553px 5.78559px rgba(0, 0, 0, 0.0605839), 0px 0.74716px 2.40751px rgba(0, 0, 0, 0.0421718);
+}
+
+.container-child {
+  width: 50%;
+  height: 100%;
+  color: #fff;
+}
+
+.signup-thumbnail {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("../01_Media/signup-thumbnail.jpg");
+  background-size: cover;
+  height: 57.4375rem;
+  background-repeat: no-repeat;
+}
+
+.thumbnail-logo, .thumbnail-content, .thumbnail-link {
+  position: relative;
+  z-index: 2;
+}
+
+.thumbnail-logo {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.thumbnail-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+.thumbnail-point {
+  color: #CECECE;
+  font-size: 1.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.point-svg {
+  margin-right: 1rem;
+}
+
+.thumbnail-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+}
+
+.signup-form {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1rem;
+  background: #FAFAFA;
+  color: #212121;
+  height: 57.4375rem;
+}
+
+.note {
+  font-family: 'Open Sans', sans-serif;
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.875rem;
+  color: #707070;
+}
+
+.file-area {
+  width: 100%;
+  position: relative;
+}
+
+.file-area input[type=file] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-area .file-dummy {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #a0a0a0;
+  width: 100%;
+  padding: 0.5rem;
+  background: rgba(0, 102, 255, 0.1);
+  border: 2px dashed rgba(0, 102, 255, 0.2);
+  text-align: center;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.file-area .file-dummy .success {
+  display: none;
+}
+
+.file-area:hover .file-dummy {
+  color: #0066ff;
+  border: 2px dashed #0066FF;
+  background: rgba(0, 102, 255, 0.2);
+}
+
+.file-area input[type=file]:focus + .file-dummy {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  color: #0066ff;
+  background: rgba(0, 102, 255, 0.2);
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.file-area input[type=file]:valid + .file-dummy {
+  border-color: rgba(0, 255, 0, 0.4);
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+.file-area input[type=file]:valid + .file-dummy .success {
+  display: inline-block;
+}
+
+.file-area input[type=file]:valid + .file-dummy .default {
+  display: none;
+}
+
+span {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 0.875rem;
+  height: 1.375rem;
+  float: right;
+}
+
+button {
+  margin-top: 1rem;
+  background: #0066FF;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.25rem;
+  color: #FFF;
+  width: 100%;
+  height: 3rem;
+  border: 0;
+  -webkit-transition: background 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #005CE5;
+}
+/*# sourceMappingURL=style.css.map */
