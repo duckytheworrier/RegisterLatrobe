@@ -10,7 +10,7 @@ body
     background-image: url("../01_Media/bg_img.jpg")
     background-color: #cccccc
     background-position: center
-    background-repeat: no-repeat
+    background-repeat: repeat
     background-position-y: top
     background-size: cover
     position: relative
@@ -34,14 +34,14 @@ body
     .main-form
         flex-direction: column
         align-items: center
-        margin-left: remy(20px) !important
-        margin-right: remy(20px) !important
+        margin-left: remy(20px)
+        margin-right: remy(20px) 
         overflow: scroll
         top: 98%
-    
+
     .container-child
         width: 100% !important
-
+        
 .container-child
     width: 50%
     flex-grow: 1
@@ -50,7 +50,7 @@ body
     color: #fff
 
 .signup-thumbnail
-    // position: relative
+    position: relative
     padding: 2rem
     display: flex
     flex-direction: column
@@ -68,12 +68,10 @@ body
 
 .thumbnail-logo
     align-self: flex-start
-    // margin-bottom: remy(48px)
 
 .thumbnail-content
     display: flex
     flex-direction: column
-    // align-self: center
     row-gap: remy(40px)
 
 .thumbnail-point

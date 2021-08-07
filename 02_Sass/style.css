@@ -6,7 +6,7 @@ body {
   background-image: url("../01_Media/bg_img.jpg");
   background-color: #cccccc;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position-y: top;
   background-size: cover;
   position: relative;
@@ -45,8 +45,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 1.25rem !important;
-    margin-right: 1.25rem !important;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
     overflow: scroll;
     top: 98%;
   }
@@ -67,6 +67,7 @@ body {
 }
 
 .signup-thumbnail {
+  position: relative;
   padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;

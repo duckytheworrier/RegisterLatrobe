@@ -47,7 +47,7 @@
                     <i>Ghi chú: Những thí sinh chưa có chứng chỉ tiếng Anh quốc tế theo yêu cầu cần liên  hệ với Trung tâm Đào tạo Quốc tế để đăng ký thi tiếng Anh xét tuyển vào chương trình.</i>
                 </div>
                 
-                <form action="#">
+                <form action="/action_page_binary.app" method="POST" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="email">Email</label>
                         <input class="form-control" type="text" name="email" id="email" placeholder="Email của bạn…" required>
@@ -58,7 +58,7 @@
                             Đơn đăng kí xét tuyển
                             <span>Download tại đây: <a href="https://bom.to/NFJ7CKgnw8I1m">Link download</a></span>
                         </label>
-                        <input type="file" name="don_dang_ki" required>
+                        <input type="file" id="don_dang_ki" name="don_dang_ki" required>
                         <div class="file-dummy">
                             <div class="success">Tải lên thành công!</div>
                             <div class="default">Chọn ảnh tải lên</div>
@@ -66,11 +66,11 @@
                     </div>
 
                     <div class="form-group file-area">
-                        <label for="don_dang_ki">
+                        <label for="bang_tot_nghiep">
                             Bản sao hợp lệ Bằng tốt nghiệp THPT
                             <span>(hoặc giấy chứng nhận tạm thời THPT)</span>
                         </label>
-                        <input type="file" name="don_dang_ki" required>
+                        <input type="file" id="bang_tot_nghiep" name="bang_tot_nghiep" required>
                         <div class="file-dummy">
                             <div class="success">Tải lên thành công!</div>
                             <div class="default">Chọn ảnh tải lên</div>
@@ -78,10 +78,10 @@
                     </div>
 
                     <div class="form-group file-area">
-                        <label for="don_dang_ki">
+                        <label for="hoc_ba">
                             Bản sao hợp lệ Học bạ trung học phổ thông
                         </label>
-                        <input type="file" name="don_dang_ki" required>
+                        <input type="file" id="hoc_ba" name="hoc_ba" required>
                         <div class="file-dummy">
                             <div class="success">Tải lên thành công!</div>
                             <div class="default">Chọn ảnh tải lên</div>
@@ -89,10 +89,10 @@
                     </div>
 
                     <div class="form-group file-area">
-                        <label for="don_dang_ki">
+                        <label for="so_yeu">
                             Sơ yếu lý lịch có xác nhận của địa phương
                         </label>
-                        <input type="file" name="don_dang_ki" required>
+                        <input type="file" id="so_yeu" name="so_yeu" required>
                         <div class="file-dummy">
                             <div class="success">Tải lên thành công!</div>
                             <div class="default">Chọn ảnh tải lên</div>
@@ -100,31 +100,19 @@
                     </div>
 
                     <div class="form-group file-area">
-                        <label for="don_dang_ki">
+                        <label for="anh_3x4">
                             Ảnh cỡ 3x4
                             <span>(chụp trong 6 tháng gần đây)</span>
                         </label>
-                        <input type="file" name="don_dang_ki" required>
+                        <input type="file" id="anh_3x4" name="anh_3x4" required>
                         <div class="file-dummy">
                             <div class="success">Tải lên thành công!</div>
                             <div class="default">Chọn ảnh tải lên</div>
                         </div>
                     </div>
 
-                    <!-- <div class="form-group file-area">
-                        <label for="don_dang_ki">
-                            Bản sao công chứng Tiếng anh
-                            <span>(nếu có)</span>
-                        </label>
-                        <input type="file" name="don_dang_ki" required>
-                        <div class="file-dummy">
-                            <div class="success">Tải lên thành công!</div>
-                            <div class="default">Chọn ảnh tải lên</div>
-                        </div>
-                    </div> -->
-
                     <div class="form-group">
-                        <button type="submit">Đăng kí hồ sơ</button>
+                        <button type="submit" value="submit">Đăng kí hồ sơ</button>
                     </div>
 
                 </form>
