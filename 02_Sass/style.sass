@@ -14,39 +14,22 @@ body
     background-position-y: top
     background-size: cover
     position: relative
-    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
     overflow: scroll
 
 .main-form
-    position: absolute
-    top: 50%
-    right: 0
-    left: 0
     margin: auto
-    transform: translateY(-50%)
     display: flex
     flex-direction: row
     flex-wrap: wrap
     max-width: remy(1200px)
     box-shadow: 0px 27px 87px rgba(0, 0, 0, 0.15), 0px 11.28px 36.3465px rgba(0, 0, 0, 0.107828), 0px 6.0308px 19.4326px rgba(0, 0, 0, 0.0894161), 0px 3.38082px 10.8938px rgba(0, 0, 0, 0.075), 0px 1.79553px 5.78559px rgba(0, 0, 0, 0.0605839), 0px 0.747159px 2.40751px rgba(0, 0, 0, 0.0421718)
-
-@media (max-width:1200px)
-    .main-form
-        flex-direction: column
-        align-items: center
-        margin-left: remy(20px)
-        margin-right: remy(20px) 
-        overflow: scroll
-        // top: 50%
-
-    .container-child
-        width: 100% !important
         
 .container-child
     width: 50%
-    flex-grow: 1
-    flex-shrink: 1
-    height: 100%
+    height: remy(919px)
     color: #fff
 
 .signup-thumbnail
@@ -59,7 +42,6 @@ body
     justify-content: space-between
     background: url('../01_Media/signup-thumbnail.jpg')
     background-size: cover
-    height: remy(919px)
     background-repeat: no-repeat
 
 .thumbnail-logo, .thumbnail-content, .thumbnail-link
@@ -97,7 +79,6 @@ body
     row-gap: remy(16px)
     background: #FAFAFA
     color: #212121
-    height: remy(919px)
 
 .note
     font-family: 'Open Sans', sans-serif
@@ -177,3 +158,14 @@ button
     
     &:hover
         background: rgba(201, 27, 41, 1)
+
+@media (max-width:1200px)
+    .main-form
+        flex-direction: column
+        align-items: center
+        overflow: scroll
+        padding-top: remy(40px)
+        padding-bottom: remy(40px)
+
+    .container-child
+        width: 80% !important
