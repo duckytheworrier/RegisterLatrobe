@@ -3,14 +3,14 @@ $primary-color: #E22333
 @function remy($value)
   @return ($value / 16px) * 1rem
 
-html, body
-    height: 100%
+html
+    height: fit-content
 
 body
     background-image: url("../01_Media/bg_img.jpg")
     background-color: #cccccc
     background-position: center
-    background-repeat: repeat
+    background-repeat: no-repeat
     background-position-y: top
     background-size: cover
     position: relative
@@ -18,6 +18,7 @@ body
     align-items: center
     justify-content: center
     overflow: scroll
+    min-height: 100vh
 
 .main-form
     margin: auto
@@ -160,11 +161,12 @@ button
         background: rgba(201, 27, 41, 1)
 
 @media (max-width:1200px)
+
     .main-form
         flex-direction: column
         align-items: center
-        padding-top: remy(40px)
-        padding-bottom: remy(40px)
+        margin-top: remy(40px)
+        margin-bottom: remy(40px)
         margin-left: remy(16px)
         margin-right: remy(16px)
 
