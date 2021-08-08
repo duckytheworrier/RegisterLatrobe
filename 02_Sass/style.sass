@@ -7,11 +7,10 @@ html
     height: fit-content
 
 body
-    background-image: url("../01_Media/bg_img.jpg")
+    background-image: url("../01_Media/bg_img2.jpg")
     background-color: #cccccc
     background-position: center
     background-repeat: no-repeat
-    background-position-y: top
     background-size: cover
     position: relative
     display: flex
@@ -38,11 +37,13 @@ body
     padding: 2rem
     display: flex
     flex-direction: column
-    row-gap: remy(40px)
+    row-gap: remy(24px)
     flex-wrap: wrap
     justify-content: space-between
-    background: url('../01_Media/signup-thumbnail.jpg')
+    // background: url('../01_Media/signup-thumbnail.png')
+    background-color: rgba(32, 32, 32, 0.98)
     background-size: cover
+    background-position: 0% 100%
     background-repeat: no-repeat
 
 .thumbnail-logo, .thumbnail-content, .thumbnail-link
@@ -172,6 +173,7 @@ button
 
     .container-child
         width: 100% !important
+        height: auto
 
     .signup-form
         height: 100%

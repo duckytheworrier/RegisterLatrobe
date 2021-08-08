@@ -5,11 +5,10 @@ html {
 }
 
 body {
-  background-image: url("../01_Media/bg_img.jpg");
+  background-image: url("../01_Media/bg_img2.jpg");
   background-color: #cccccc;
   background-position: center;
   background-repeat: no-repeat;
-  background-position-y: top;
   background-size: cover;
   position: relative;
   display: -webkit-box;
@@ -57,14 +56,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 2.5rem;
+  row-gap: 1.5rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("../01_Media/signup-thumbnail.jpg");
+  background-color: rgba(32, 32, 32, 0.98);
   background-size: cover;
+  background-position: 0% 100%;
   background-repeat: no-repeat;
 }
 
@@ -244,6 +244,7 @@ button:hover {
   }
   .container-child {
     width: 100% !important;
+    height: auto;
   }
   .signup-form {
     height: 100%;
