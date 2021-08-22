@@ -22,6 +22,7 @@ body {
           justify-content: center;
   overflow: scroll;
   min-height: 100vh;
+  font-size: 1rem;
 }
 
 .main-form {
@@ -252,8 +253,8 @@ button:hover {
   h2, h3 {
     font-size: 1.5rem;
   }
-  p, li {
-    font-size: 1rem;
+  p, li, i {
+    font-size: 0.875rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
