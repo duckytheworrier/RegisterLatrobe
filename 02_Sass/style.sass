@@ -30,7 +30,7 @@ body
         
 .container-child
     width: 50%
-    height: remy(919px)
+    height: remy(930px)
     color: #fff
 
 .signup-thumbnail
@@ -98,23 +98,23 @@ label
     input[type=file]
         position: absolute
         width: 100%
-        height: 100%
-        top: 0
-        left: 0
-        right: 0
-        bottom: 0
+        height: remy(40px)
         opacity: 0
         cursor: pointer
 
+
     .file-dummy
+        height: remy(40px)
         font-family: 'Open Sans', sans-serif
         font-size: 14px
         color: #a0a0a0
         width: 100%
-        padding: remy(8px)
         background: rgba(226, 35, 51, 0.1)
         border: 2px dashed rgba(226, 35, 51, 0.2)
+        display: flex
         text-align: center
+        align-items: center
+        justify-content: center
         transition: background 0.3s ease-in-out
         
         .success
@@ -161,6 +161,15 @@ button
     
     &:hover
         background: rgba(201, 27, 41, 1)
+
+i
+    font-size: remy(14px)
+
+.name-phone
+    display: flex
+    flex-direction: row
+    column-gap: remy(16px)
+
 
 @media (max-width:1200px)
 
